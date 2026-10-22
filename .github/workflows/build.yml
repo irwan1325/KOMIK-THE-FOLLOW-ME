@@ -1,0 +1,22 @@
+name: Update daftar chapter
+
+on:
+  push:
+    paths:
+      - "komik/**"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: python3 build.py
+      - name: Commit comics.json
+        run: |
+          git config user.name "github-actions"
+          git config user.email "actions@github.com"
+          git add comics.json
+          git diff --staged --quiet || (git commit -m "Update comics.json" && git push)
