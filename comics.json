@@ -1,0 +1,25 @@
+{
+  "title": "Judul Komik Gue",
+  "description": "Ganti teks ini di komik/info.json dengan sinopsis komikmu.",
+  "cover": "komik/chapter-01/001.jpg",
+  "chapters": [
+    {
+      "title": "Chapter 01",
+      "pages": [
+        "komik/chapter-01/001.jpg",
+        "komik/chapter-01/002.jpg",
+        "komik/chapter-01/003.jpg",
+        "komik/chapter-01/004.jpg"
+      ]
+    },
+    {
+      "title": "Chapter 02",
+      "pages": [
+        "komik/chapter-02/001.jpg",
+        "komik/chapter-02/002.jpg",
+        "komik/chapter-02/003.jpg",
+        "komik/chapter-02/004.jpg"
+      ]
+    }
+  ]
+}
